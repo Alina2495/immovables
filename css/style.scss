@@ -1,0 +1,45 @@
+$blue: #0157D9;
+$black: #252525;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #252525;
+}
+
+.fs {
+    &-18 {
+        font-size: 18px;
+    }
+}
+
+.btn {
+    &-blue {
+        color: white;
+        background-color: $blue;
+    }
+}
+
+footer {
+    background-color: #F9F9F9;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    legend {
+        line-height: 21px;
+    }
+    .form-control {
+        min-height: 36px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+        &::placeholder {
+            color: #BEBEBE;
+        }
+    }
+}
+
+@media (min-width: 1660px) {
+    .container {
+        max-width: 1600px;
+    }
+}
