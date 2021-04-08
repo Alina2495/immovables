@@ -1,26 +1,125 @@
 $blue: #0157D9;
 $black: #252525;
+$white: white;
+$linear: linear-gradient(270deg, #0056D7 0%, #0468FF 100%);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
-    color: #252525;
+    color: $black;
+    line-height: normal;
 }
 
 .fs {
     &-18 {
         font-size: 18px;
     }
-}
-
-.btn {
-    &-blue {
-        color: white;
-        background-color: $blue;
+    &-32 {
+        font-size: 32px;
     }
 }
 
-footer {
+.c {
+    &-blue {
+        color: $blue;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: inherit;
+    }
+}
+
+.btn {
+    font-weight: 700;
+    &-blue {
+        color: white;
+        background-image: $linear;
+        &:hover {
+            color: $white;
+        }
+    }
+    &-outline {
+        border: 2px solid $blue;
+        border-radius: 5px;
+        color: $black;
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+}
+
+.form-control,
+.form-select {
+    border: 2px solid $blue;
+}
+
+.hero {
+    height: 450px;
+    img {
+        z-index: -1;
+        object-fit: cover;
+        object-position: center -280px;
+    }
+}
+
+.tab-btn {
+    border: 2px solid $blue;
+    background-color: $white;
+    &.active {
+        background: $linear;
+        color: $white;
+    }
+    &:first-child {
+        border-radius: 5px 0 0 5px;
+    }
+    &:last-child {
+        border-radius: 0px 5px 5px 0px;
+    }
+}
+
+.category-list {
+    .card {
+        a {
+            width: 85%;
+        }
+    }
+}
+
+.card {
+    border: none;
+    // border: 1px solid $black;
+}
+
+.shadow-box {
+    box-shadow: 0px 2px 10px rgba(37, 37, 37, 0.2);
+}
+
+.article-text {
+    p {
+        &:last-of-type {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.bg-light {
     background-color: #F9F9F9;
+}
+
+footer {
     a {
         text-decoration: none;
         color: inherit;
@@ -43,3 +142,31 @@ footer {
         max-width: 1600px;
     }
 }
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .hero {
+        height: 200px;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .fs-18 {
+        font-size: 16px;
+    }
+    .article-text {
+        p {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {}

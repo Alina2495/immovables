@@ -2,18 +2,118 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #252525;
+  line-height: normal;
 }
 
 .fs-18 {
   font-size: 18px;
 }
 
-.btn-blue {
-  color: white;
-  background-color: #0157D9;
+.fs-32 {
+  font-size: 32px;
 }
 
-footer {
+.c-blue {
+  color: #0157D9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.btn {
+  font-weight: 700;
+}
+
+.btn-blue {
+  color: white;
+  background-image: -webkit-gradient(linear, right top, left top, from(#0056D7), to(#0468FF));
+  background-image: linear-gradient(270deg, #0056D7 0%, #0468FF 100%);
+}
+
+.btn-blue:hover {
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid #0157D9;
+  border-radius: 5px;
+  color: #252525;
+}
+
+.btn-outline:hover {
+  background-color: #0157D9;
+  color: white;
+}
+
+.form-control,
+.form-select {
+  border: 2px solid #0157D9;
+}
+
+.hero {
+  height: 450px;
+}
+
+.hero img {
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center -280px;
+     object-position: center -280px;
+}
+
+.tab-btn {
+  border: 2px solid #0157D9;
+  background-color: white;
+}
+
+.tab-btn.active {
+  background: -webkit-gradient(linear, right top, left top, from(#0056D7), to(#0468FF));
+  background: linear-gradient(270deg, #0056D7 0%, #0468FF 100%);
+  color: white;
+}
+
+.tab-btn:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.tab-btn:last-child {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.category-list .card a {
+  width: 85%;
+}
+
+.card {
+  border: none;
+}
+
+.shadow-box {
+  -webkit-box-shadow: 0px 2px 10px rgba(37, 37, 37, 0.2);
+          box-shadow: 0px 2px 10px rgba(37, 37, 37, 0.2);
+}
+
+.article-text p:last-of-type {
+  margin-bottom: 16px;
+}
+
+.bg-light {
   background-color: #F9F9F9;
 }
 
@@ -52,6 +152,21 @@ footer .form-control::placeholder {
 @media (min-width: 1660px) {
   .container {
     max-width: 1600px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    height: 200px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .fs-18 {
+    font-size: 16px;
+  }
+  .article-text p {
+    margin-bottom: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
