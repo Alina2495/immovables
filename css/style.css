@@ -123,8 +123,6 @@ a:hover {
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center -280px;
-     object-position: center -280px;
 }
 
 .category-list .card a {
@@ -234,6 +232,13 @@ a:hover {
   border-radius: 0px 5px 5px 0px;
 }
 
+.badge1 {
+  border: 1px solid #C5C5C5;
+  border-radius: 5px;
+  margin-right: 20px;
+  text-align: center;
+}
+
 .card {
   border: none;
   height: 100%;
@@ -320,8 +325,11 @@ footer .form-control::placeholder {
   .hero {
     height: 200px;
   }
-  .without-title img {
+  .find-on-map .map-container {
     height: 200px;
+  }
+  .without-title img {
+    height: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
